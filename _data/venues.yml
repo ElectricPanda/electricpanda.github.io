@@ -1,9 +1,11 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"EuroSys":
+  color: "#0b6e4f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"AAAI":
+  color: "#1d4ed8"
 
-"Vision":
-  color: "#009f36"
+"ACSAC":
+  color: "#7c3aed"
+
+"Access":
+  color: "#c2410c"
