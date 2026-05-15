@@ -100,32 +100,32 @@ cv:
 
     Awards:
       - name: ETHGlobal Open Agents Hackathon
-        date: 2026-05
+        date: 2026
         highlights:
           - "[OpenDAIO: Decentralized AI Consensus for High-Stakes Review](https://github.com/openDAIO)"
           - "[Finalist (Top 7 out of 468 projects)](https://ethglobal.com/showcase/daio-zce3h)"
 
       - name: The Chainlink Fall 2021 Hackathon
-        date: 2021-12
+        date: 2021
         highlights:
           - "[Governor-C: Sybil-Resistant Quadratic Voting System](https://github.com/D3LAB-DAO/Governor-C)"
           - "[Chainlink DAO Prize, Polygon Best DAO/Tooling DApp Prize](https://devpost.com/software/governor-c-sybil-resistant-quadratic-voting-system)"
 
       - name: ETHCon Korea 2020 Hackathon
-        date: 2020-12
+        date: 2020
         highlights:
           - Efficient Bootstrapping for Full Nodes on Account-based Blockchain
           - "[2nd Prize](https://www.facebook.com/ethconkr/posts/%EC%9D%B4%EB%93%9C%EC%BD%98-%ED%95%9C%EA%B5%AD-2020%EC%9D%98-%EC%A0%95%EA%B7%9C-%EC%83%81-%EC%88%98%EC%83%81%ED%8C%80%EC%9D%84-%EB%B0%9C%ED%91%9C%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%98%AC%ED%95%B4-%EC%9D%B4%EB%93%9C%EC%BD%98-%ED%95%B4%EC%BB%A4%ED%86%A4%EC%97%90%EB%8A%94-%EC%B4%9D-45%ED%8C%80-110%EC%97%AC%EB%AA%85%EC%9D%98-%EC%B0%B8%EA%B0%80%EC%9E%90%EA%B0%80-%EC%B0%B8%EC%97%AC%ED%95%98%EC%98%80%EA%B3%A0-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-%EC%9E%AC%EB%8B%A8%EC%9D%98-%ED%8E%80%EB%94%A9-%ED%94%84%EB%A1%9C/3705275572885353/)"
           - "[Onther Tokamak Network Contributor Award](https://www.facebook.com/ethconkr/photos/%EC%9D%B4%EB%93%9C%EC%BD%98-%ED%95%9C%EA%B5%AD-2020%EC%9D%98-%ED%95%B4%EC%BB%A4%ED%86%A4-%ED%86%A0%EC%B9%B4%EB%A7%89-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%83%81-%EC%88%98%EC%83%81%ED%8C%80%EC%9D%84-%EB%B0%9C%ED%91%9C%ED%95%A9%EB%8B%88%EB%8B%A4-%ED%86%A0%EC%B9%B4%EB%A7%89-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%83%81-vmolab-project-ethanos%EC%98%AC%ED%95%B4-%EC%9D%B4%EB%93%9C%EC%BD%98-%ED%95%B4/3707411526005091/?_rdr)"
 
       - name: Avalanche University Hackathon
-        date: 2020-06
+        date: 2020
         highlights:
           - "[TAVA: Blockchain-based Solution for Micro-mobility Redistribution](https://github.com/t-ava)"
           - "[1st Prize](https://medium.com/avalancheavax/avalanche-concludes-its-first-university-focused-hackathon-avalaunch-472854d8e3df)"
 
       - name: Energy X Security Hackathon (Ministry of Science and ICT)
-        date: 2019-10
+        date: 2019
         highlights:
           - Blockchain-based Anonymous Open Micro Grid
           - "[Excellence Award (2nd Prize)](https://www.newsway.co.kr/news/view?tp=1&ud=2019102900112471683)"
