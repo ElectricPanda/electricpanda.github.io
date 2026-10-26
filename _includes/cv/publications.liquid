@@ -55,7 +55,7 @@
               <p class="ml-1 ml-md-4 mb-1">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
 
-            {% if entry.url or entry.code_url %}
+            {% if entry.url or entry.code_url or entry.status %}
               <p class="ml-1 ml-md-4 mb-0">
                 {% if entry.url %}
                   <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -65,6 +65,9 @@
                 {% endif %}
                 {% if entry.code_url %}
                   <a href="{{ entry.code_url }}" target="_blank" rel="noopener noreferrer">Code</a>
+                {% endif %}
+                {% if entry.status %}
+                  <span class="publication-status">{{ entry.status }}</span>
                 {% endif %}
               </p>
             {% endif %}
@@ -101,7 +104,7 @@
               <p class="ml-1 ml-md-4 mb-1">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
 
-            {% if entry.url or entry.code_url %}
+            {% if entry.url or entry.code_url or entry.status %}
               <p class="ml-1 ml-md-4 mb-0">
                 {% if entry.url %}
                   <a href="{{ entry.url }}" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -111,6 +114,9 @@
                 {% endif %}
                 {% if entry.code_url %}
                   <a href="{{ entry.code_url }}" target="_blank" rel="noopener noreferrer">Code</a>
+                {% endif %}
+                {% if entry.status %}
+                  <span class="publication-status">{{ entry.status }}</span>
                 {% endif %}
               </p>
             {% endif %}

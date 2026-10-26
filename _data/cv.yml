@@ -33,6 +33,14 @@ cv:
         summary: Institute of Computer Technology
 
     Publications:
+      - title: "On the Performance and Storage Implications of Key Schemes for Ethereum's Merkle Patricia Trie"
+        authors:
+          - "**Junmo Lee**"
+          - Soo-Mook Moon
+        journal: International Conference on Very Large Data Bases (VLDB 2027)
+        date: 2027
+        status: to appear
+
       - title: "Ethane: Debloating State Data using Compact Trie for Account-based Blockchain"
         authors:
           - "**Junmo Lee**"

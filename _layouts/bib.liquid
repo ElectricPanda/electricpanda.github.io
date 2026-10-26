@@ -186,7 +186,9 @@
     {% endif %}
     {% assign entry_note = entry.note | strip %}
     {% assign normalized_note = entry_note | downcase %}
-    {% if normalized_note == 'oral presentation' or normalized_note == 'oral' %}
+    {% if normalized_note == 'to appear' %}
+      {% assign entry_note = '' %}
+    {% elsif normalized_note == 'oral presentation' or normalized_note == 'oral' %}
       {% capture publication_details %}{{ publication_details }}{% if publication_details != blank %}, {% endif %}Oral{% endcapture %}
       {% assign entry_note = '' %}
     {% endif %}
@@ -266,6 +268,9 @@
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+      {% endif %}
+      {% if normalized_note == 'to appear' %}
+        <span class="publication-status">to appear</span>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}
