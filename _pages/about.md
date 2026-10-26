@@ -3,6 +3,8 @@ layout: about
 title: About
 permalink: /
 
+# If a profile photo is added, use a display width of 150px.
+
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
