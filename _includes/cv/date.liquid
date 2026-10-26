@@ -1,0 +1,11 @@
+{%- assign value = include.value | append: '' | strip -%}
+{%- assign normalized_value = value | downcase -%}
+{%- if normalized_value == 'present' -%}
+  Present
+{%- elsif value.size == 7 -%}
+  {{- value | append: '-01' | date: '%b %Y' -}}
+{%- elsif value.size >= 10 -%}
+  {{- value | date: '%b %Y' -}}
+{%- else -%}
+  {{- value -}}
+{%- endif -%}

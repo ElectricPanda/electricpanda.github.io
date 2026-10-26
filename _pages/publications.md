@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Full publication list of Junmo Lee.
 display_description: See also my <a class="scholar-link" href="https://scholar.google.com/citations?user=n5S3TvAAAAAJ&hl=ko" target="_blank" rel="external nofollow noopener">Google Scholar</a>.
 _styles: |
@@ -13,8 +13,6 @@ _styles: |
 nav: true
 nav_order: 2
 ---
-
-<!-- _pages/publications.md -->
 
 <div class="publications">
 

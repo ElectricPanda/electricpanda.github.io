@@ -154,7 +154,8 @@
     {% if entry.type == 'article' %}
       {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
+      {% assign venue_name = entry.booktitle | regex_replace: '^Proceedings of (the )?', '' %}
+      {% capture entrytype %}<em>{{ venue_name }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% else %}
@@ -179,13 +180,27 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% assign publication_details = entrymonth | append: entryyear | strip %}
+    {% if proceedings contains entry.type and entry.abbr != blank %}
+      {% assign publication_details = entry.abbr | append: ' ' | append: publication_details | strip %}
+    {% endif %}
+    {% assign entry_note = entry.note | strip %}
+    {% assign normalized_note = entry_note | downcase %}
+    {% if normalized_note == 'oral presentation' or normalized_note == 'oral' %}
+      {% capture publication_details %}{{ publication_details }}{% if publication_details != blank %}, {% endif %}Oral{% endcapture %}
+      {% assign entry_note = '' %}
+    {% endif %}
+    {% capture periodical %}
+      {{ entrytype }}{% if publication_details != blank %}{% if entrytype_text != '' %} ({{ publication_details }}){% else %}{{ publication_details }}{% endif %}{% endif %}
+    {% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entry_note != blank %}
+      <div class="periodical">
+        {{ entry_note }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
@@ -375,7 +390,7 @@
       <div class="bibtex hidden">
         {% highlight bibtex %}
         {{- entry.bibtex | hideCustomBibtex -}}
-        {% endhighlight %}
+      {% endhighlight %}
       </div>
     {% endif %}
 

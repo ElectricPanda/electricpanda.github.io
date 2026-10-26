@@ -40,6 +40,70 @@ body.sticky-bottom-footer {
   }
 }
 
+.about-section {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  .about-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .about-section-link {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 0.25rem;
+    color: var(--global-theme-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-bg-color);
+      background-color: var(--global-theme-color);
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 3px;
+    }
+  }
+}
+
+.news {
+  .table {
+    margin-bottom: 0;
+  }
+
+  .news-date {
+    width: 1%;
+    padding-right: 1.25rem;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  th,
+  td {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 // Content layout uses Bootstrap's grid system with responsive columns
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples

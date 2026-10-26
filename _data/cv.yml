@@ -10,7 +10,7 @@ cv:
       - institution: Seoul National University
         location: Seoul, South Korea
         area: Electrical and Computer Engineering
-        degree: PhD
+        degree: Ph.D.
         start_date: 2019-03
         end_date: 2026-02
         highlights:
@@ -20,7 +20,7 @@ cv:
       - institution: Seoul National University
         location: Seoul, South Korea
         area: Electrical and Computer Engineering
-        degree: BS
+        degree: B.S.
         start_date: 2015-03
         end_date: 2019-02
 
@@ -29,7 +29,7 @@ cv:
         position: Postdoctoral Researcher
         location: Seoul, South Korea
         start_date: 2026-03
-        end_date: present
+        end_date: 2026-08
         summary: Institute of Computer Technology
 
     Publications:
@@ -67,14 +67,14 @@ cv:
 
       - title: "Trie-Hashimoto: State Trie-Based Proof-of-Work Mining for Optimizing Blockchain Storage"
         authors:
-          - Jae-Yun Kim
-          - "**Junmo Lee**"
+          - "Jae-Yun Kim<sup>*</sup>"
+          - "**Junmo Lee**<sup>*</sup>"
           - Soo-Mook Moon
         journal: IEEE Access (2024)
         date: 2024
         url: https://doi.org/10.1109/ACCESS.2024.3360379
         code_url: https://github.com/ElectricPanda/go-ethereum/tree/TrieHashimoto
-        summary: Junmo Lee and Jae-Yun Kim contributed equally.
+        summary: '\* Equal contribution'
 
       - title: "BRAIN: Blockchain-based Inference and Training Platform for Large-Scale Models"
         authors:

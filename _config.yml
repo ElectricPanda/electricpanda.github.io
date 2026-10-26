@@ -8,7 +8,7 @@ middle_name:
 last_name: Lee
 contact_note:
 description: >-
-  Junmo Lee is a postdoctoral researcher at Seoul National University (SNU), working on blockchain systems, scalability, storage efficiency, and security.
+  Junmo Lee is a researcher working on blockchain systems, scalability, storage efficiency, and security. He received his Ph.D. from Seoul National University (SNU).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -148,7 +148,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false
   projects:
     output: true
   teachings:
@@ -176,12 +176,11 @@ include: ["_pages", "_scripts"]
 exclude:
   # Temporarily keep unused template sources in the repo, but do not publish them.
   - _books/
-  - _news/
+  - _news/announcement_*.md
   - _pages/blog.md
   - _pages/about_einstein.md
   - _pages/books.md
   - _pages/dropdown.md
-  - _pages/news.md
   - _pages/profiles.md
   - _pages/projects.md
   - _pages/repositories.md
