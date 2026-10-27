@@ -3,16 +3,30 @@ layout: default
 ---
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title font-weight-bold">
-      {% if site.title == 'blank' %}
-        {{ site.first_name }}
-        {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+    <div class="about-title-row">
+      <h1 class="post-title font-weight-bold">
+        {% if site.title == 'blank' %}
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      {% if page.social %}
+        <div class="social">
+          <nav class="contact-icons" aria-label="Contact and profiles">{% social_links %}</nav>
+        </div>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    </div>
+    {% if page.subtitle != blank %}
+      <p class="desc">{{ page.subtitle }}</p>
+    {% endif %}
+    {% if page.social and site.contact_note != blank %}
+      <div class="social">
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
   </header>
 
   <article>
@@ -69,15 +83,6 @@ layout: default
         </div>
         {% include selected_papers.liquid %}
       </section>
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
